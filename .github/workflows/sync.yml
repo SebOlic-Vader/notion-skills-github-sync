@@ -32,7 +32,7 @@ name: Sync Notion skills
 
 on:
   schedule:
-    - cron: "0 * * * *" # hourly
+    - { cron: "17 12 * * *", timezone: "Europe/Berlin" } # daily at 12:17 German time
   workflow_dispatch: {} # manual "Run workflow" button
 
 concurrency:
